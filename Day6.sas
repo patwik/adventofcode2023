@@ -34,11 +34,8 @@ data kalle;
   format Tc Dc 32.;
   input dummy $ T $;
   input dummy $ D $;
-  
   Tc=input(compress(T),32.);
   Dc=input(compress(D),32.);
-  
-
   Tpmin=int((Tc/2)-sqrt(((Tc/2)**2)-Dc));
   Tpmax=int((Tc/2)+sqrt(((Tc/2)**2)-Dc));
   if (Tc-Tpmin)*Tpmin=Dc then Tpmin=Tpmin+1;
@@ -52,4 +49,4 @@ Distance:  9  40  200
 
 *-- 56706216 --to high --;
     43364472
-211904
+
